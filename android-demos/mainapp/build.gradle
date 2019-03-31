@@ -17,7 +17,7 @@ android {
         versionName "1.0"
 
         ndk { // jni使用
-            moduleName "hello"       //生成的so文件名字，调用C程序的代码中会用到该名字
+            moduleName "hello"         //生成的so文件名字，调用C程序的代码中会用到该名字
             abiFilters "armeabi", "armeabi-v7a", "x86" //输出指定三种平台下的so库
         }
     }
