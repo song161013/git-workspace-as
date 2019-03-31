@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Hipermission  start-->
+    <style name="notAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="CustomTheme_Dialog" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/notAnimation</item>
+    </style>
+
+
+    <style name="PermissionBaseWhiteStyle">
+        <item name="PermissionTitleColor">@color/permissionColorWhite</item>
+        <item name="PermissionMsgColor">@color/permissionColorWhite</item>
+        <item name="PermissionItemTextColor">@color/permissionColorWhite</item>
+        <item name="PermissionButtonTextColor">@color/permissionColorWhite</item>
+        <item name="PermissionIconFilterColor">@color/permissionColorWhite</item>
+    </style>
+
+    <style name="PermissionDefaultNormalStyle">
+        <item name="PermissionTitleColor">#737373</item>
+        <item name="PermissionMsgColor">#737373</item>
+        <item name="PermissionItemTextColor">#737373</item>
+        <item name="PermissionButtonBackground">@drawable/hipermission_shape_btn_next</item>
+        <item name="PermissionBackround">@drawable/hipermission_shape_bg_white</item>
+        <item name="PermissionButtonTextColor">@android:color/white</item>
+    </style>
+
+    <style name="PermissionDefaultGreenStyle" parent="PermissionBaseWhiteStyle">
+        <item name="PermissionButtonBackground">@drawable/hipermission_shape_btn_green_light</item>
+        <item name="PermissionBackround">@mipmap/hipermissoin_card</item>
+        <item name="PermissionBgFilterColor">@color/permissionBgColorGreenLight</item>
+    </style>
+
+    <style name="PermissionDefaultBlueStyle" parent="PermissionBaseWhiteStyle">
+        <item name="PermissionButtonBackground">@drawable/hipermission_shape_btn_border_white</item>
+        <item name="PermissionBackround">@drawable/hipermission_shape_btn_blue</item>
+    </style>
+
+    <style name="PermissionAnimFade">
+        <item name="android:windowEnterAnimation">@anim/hipermission_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/hipermission_fade_out</item>
+    </style>
+
+    <style name="PermissionAnimScale">
+        <item name="android:windowEnterAnimation">@anim/hipermission_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/hipermission_scale_out</item>
+    </style>
+
+    <style name="PermissionAnimModal">
+        <item name="android:windowEnterAnimation">@anim/hipermission_modal_in</item>
+        <item name="android:windowExitAnimation">@anim/hipermission_modal_out</item>
+    </style>
+
+    <style name="PermissionBlueStyle">
+        <item name="PermissionTitleColor">@color/colorPrimaryDark</item>
+        <item name="PermissionMsgColor">@color/colorPrimary</item>
+        <item name="PermissionItemTextColor">@color/colorPrimary</item>
+        <item name="PermissionButtonBackground">@drawable/hipermission_shape_btn</item>
+        <item name="PermissionBackround">@drawable/hipermission_shape_bg_white</item>
+        <item name="PermissionButtonTextColor">@android:color/white</item>
+    </style>
+
+    <style name="CusStyle" parent="PermissionDefaultGreenStyle">
+        <item name="PermissionBgFilterColor">#75D175</item>
+    </style>
+    <!--Hipermission  end-->
+
+
+    <!--switch 按钮 start-->
+    <style name="s_true" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/permissionColorGreen</item>
+    </style>
+
+    <style name="s_false" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <!--switch 按钮 end-->
+
+    <!--drawablelayout 侧滑  start-->
+    <style name="item_style">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!--drawablelayout 侧滑  end-->
+</resources>

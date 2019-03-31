@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="normal_orange">#ff6633</color>
+    <color name="gray_green">#697969</color>
+    <color name="black_color">#000000</color>
+
+    <!--hipermission-->
+    <color name="permissionColorGreen">#41c236</color>
+    <color name="permissionColorWhite">#ffffff</color>
+    <color name="permissionBgColorGreenLight">#44A49C</color>
+    <color name="permissionBgColorBlue">#ee447AA4</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorWhite">#fffffc</color>
+
+    <color name="transpraent_green">#1bd294</color>
+    <color name="gray">#FF666968</color>
+
+</resources>

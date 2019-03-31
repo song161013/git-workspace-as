@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+     <ImageView
+    	 android:id="@+id/searchImage"
+     	 android:layout_width="256dp"
+     	 android:layout_height="288dp"
+         />
+     
+     <TextView
+         android:id="@+id/searchTextView"
+   		 android:layout_width="wrap_content"
+   		 android:layout_height="wrap_content"
+   		 android:layout_below="@id/searchImage"
+   		 android:text="place put your finger"
+   		 />
+     <Button
+         android:id="@+id/signleSearchButton"
+   		 android:layout_width="fill_parent"
+   		 android:layout_height="wrap_content"
+   		 android:layout_below="@id/searchTextView"
+   		 android:text="@string/singlesearch"
+         />
+     <Button
+         android:id="@+id/continuSearchButton"
+   		 android:layout_width="fill_parent"
+   		 android:layout_height="wrap_content"
+   		 android:layout_below="@id/signleSearchButton"
+   		 android:text="@string/continusearch"
+         />
+    
+
+</RelativeLayout>

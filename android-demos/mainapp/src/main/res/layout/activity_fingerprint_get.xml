@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+     <ImageView
+    	 android:id="@+id/getImage"
+     	 android:layout_width="256dp"
+     	 android:layout_height="288dp"
+         />
+     <TextView
+         android:id="@+id/getTextView"
+   		 android:layout_width="fill_parent"
+   		 android:layout_height="50dp"
+   		 android:textSize="40px"
+   		 android:layout_below="@id/getImage"
+   		 android:text="请两次平放手指"
+   		 />
+     
+       <EditText 
+         android:id="@+id/getEditText"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/getTextView"
+         android:text="put your finger id"
+         />
+       
+     <Button
+         android:id="@+id/singleGetButton"
+         android:layout_width="wrap_content"
+   		 android:layout_height="wrap_content"
+   		 android:layout_centerHorizontal="true"
+   		 android:layout_below="@id/getEditText"
+   		 android:text="@string/singleget"
+         />
+     <!--
+     <Button
+         android:id="@+id/continuGetButton"
+         android:layout_width="wrap_content"
+   		 android:layout_height="wrap_content"
+   		 android:layout_toRightOf="@id/singleGetButton"
+   		 android:layout_below="@id/getEditText"
+   		 android:text="@string/continuget"
+         />
+     <Button 
+         android:id="@+id/exitContinuButton"
+         android:layout_width="wrap_content"
+   		 android:layout_height="wrap_content"
+   		 android:layout_toRightOf="@id/continuGetButton"
+   		 android:layout_below="@id/getEditText"
+   		 android:text="@string/exitcontinu"
+         />
+  		-->
+</RelativeLayout>

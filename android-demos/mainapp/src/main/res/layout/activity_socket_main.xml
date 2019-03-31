@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lin_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/client_ip"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:hint="请输入服务端IP地址"
+            android:text="192.168.10.143" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin_ip"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/editText_server"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="5"
+            android:hint="请输入一个四位端口号"
+            android:phoneNumber="true"
+            android:text="8888" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/server_OK"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="确认" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:hint="请输入要发送的消息……" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit"
+        android:text="发送消息" />
+
+    <ListView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/lin_1"
+        android:text="Hello World!" />
+</RelativeLayout>

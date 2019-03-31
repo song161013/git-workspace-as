@@ -1,0 +1,177 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.main.app">
+    <!--首先，肯定需要获取读取OTG和文件权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!--权限申请测试-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.hardware.usb.host"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <!--usb操作 start-->
+        <activity android:name="com.android.usb.UsbMainActivity" />
+        <!--usb操作 end-->
+        <activity android:name="com.android.regextest.RegexTestActivity" />
+
+        <!--正则-->
+        <activity
+            android:name="com.android.reflect.ReflectTestActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!--扫描枪-->
+        <activity android:name="com.android.scan.scannergun.ScannerGunActivity" />
+
+        <!--list集合排序-->
+        <activity
+            android:name="com.android.list.sort.ListSortActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!--字符串加密和解密-->
+        <activity
+            android:name="com.android.encyption.EncryptionActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!--二维码扫描-->
+        <activity
+            android:name="com.android.zxingsample.ZxingScanActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.android.zxingsample.ZxingActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!--Expandable Listview-->
+        <activity
+            android:name="com.android.expandablelistview.ExpandableListviewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.android.expandablelistview.ExpandableListViewActivity_Mobile_Goods"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!--指纹模块 START-->
+        <activity android:name="com.example.synodemo.FingerLib" />
+        <activity android:name="com.example.synodemo.FirstActivity" />
+        <activity android:name="com.example.synodemo.GetActivity" />
+        <activity android:name="com.example.synodemo.SecondActivity" />
+        <activity android:name="com.example.synodemo.SearchActivity" />
+        <!--指纹模块 END-->
+
+        <!--设计模式 start-->
+
+        <activity
+            android:name="com.android.designpatten.DesignPatternActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.android.designpatten.JiandanGongchangPattenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.android.designpatten.CeLuePattenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.android.designpatten.ProxyActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.android.designpatten.DecoratorActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!--设计模式 end-->
+
+        <activity
+            android:name="com.android.permission.PermissionActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name="com.android.hipermission.HipermissionActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!--Glide框架学习-->
+        <activity
+            android:name="com.android.glide.GlideActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!--LitePal 数据库框架学习-->
+        <activity
+            android:name="com.android.db.DBActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!--自定义view-->
+        <activity
+            android:name="com.hero.book.cusotom.view.Custom_TVActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!--okhttp测试-->
+        <activity
+            android:name="com.android.okhttp3.OkHttp3Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <service
+            android:name="com.android.scan.scannergun.ScannerGunService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/detection_service_config" />
+        </service>
+
+        <!--共享柜 货道背景-->
+        <activity android:name="com.custom.view.HuodaoBGActivity" />
+
+        <!--swtich Btn用法-->
+        <activity
+            android:name="com.android.switchbtn.SwitchBtnActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!--drawablelayout侧滑-->
+        <activity
+            android:name="com.android.slide.drawablelayout.SlideDrawablelayoutActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!--OTG usb通信  start-->
+        <activity
+            android:name="com.hoho.android.usbserial.examples.DeviceListActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name="com.hoho.android.usbserial.examples.SerialConsoleActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <!--OTG usb通信 end-->
+
+    </application>
+</manifest>

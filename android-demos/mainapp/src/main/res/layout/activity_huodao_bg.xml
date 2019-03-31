@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <com.custom.view.BuhuoTextView
+        android:id="@+id/tv_huodao"
+        android:layout_width="300dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp" />
+
+    <com.custom.view.BuhuoTextView
+        android:id="@+id/tv_huodao1"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp" />
+
+    <com.custom.view.BuhuoTextView
+        android:id="@+id/tv_huodao2"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

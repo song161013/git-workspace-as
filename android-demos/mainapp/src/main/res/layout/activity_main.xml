@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_usb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USB操作" />
+
+        <Button
+            android:id="@+id/btn_regex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regex操作" />
+
+        <Button
+            android:id="@+id/btn_reflect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="反射操作" />
+
+        <Button
+            android:id="@+id/btn_scann_gun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫描枪" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_thread_pool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="线程池" />
+
+        <Button
+            android:id="@+id/btn_list_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List集合排序" />
+
+        <Button
+            android:id="@+id/btn_encrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="字符串加密和解密" />
+
+        <Button
+            android:id="@+id/btn_zxing_scann"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="zxing扫描" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_expandable_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expandable listview" />
+
+        <Button
+            android:id="@+id/btn_fingerprint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="指纹" />
+
+        <Button
+            android:id="@+id/btn_design_pattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设计模式" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_permission_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="权限申请测试" />
+
+        <Button
+            android:id="@+id/btn_permission_test_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="权限申请测试2" />
+
+        <Button
+            android:id="@+id/btn_glide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Glide框架" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_db_lite_pal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LitePal数据库框架学习" />
+
+        <Button
+            android:id="@+id/btn_cutsom_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义view" />
+
+        <Button
+            android:id="@+id/btn_appshortcut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="app快捷键" />
+
+        <Button
+            android:id="@+id/btn_jni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JNI使用" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--/*共享柜货道背景*/-->
+        <Button
+            android:id="@+id/btn_huodao_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="货道背景" />
+
+        <!--swtich Btn用法-->
+        <Button
+            android:id="@+id/btn_switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="switch按钮" />
+
+        <!--drawableLyaout 侧滑用法-->
+        <Button
+            android:id="@+id/btn_slide_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="drawableLyaout 侧滑" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--drawableLyaout 侧滑用法-->
+        <Button
+            android:id="@+id/btn_otg_usb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otg usb通信" />
+    </LinearLayout>
+</LinearLayout>

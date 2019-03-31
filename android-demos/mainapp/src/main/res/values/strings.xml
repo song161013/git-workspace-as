@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">mainapp</string>
+    <string name="accessibility_service_description">Listen to USB scanner input</string>
+    <!--指纹模块 start-->
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_syno">welcome to syno demo</string>
+    <string name="get">获取指纹</string>
+    <string name="search">指纹搜索</string>
+    <string name="singleget">录入指纹</string>
+    <string name="continuget">连续录入指纹</string>
+    <string name="singlesearch">搜索图像</string>
+    <string name="continusearch">连续搜索图像</string>
+    <string name="getfaile">获取图像失败</string>
+    <string name="getsuccess">获取图像成功</string>
+    <string name="searchfaile">搜索图像失败</string>
+    <string name="searchsuccess">搜索图像成功</string>
+    <string name="plaseputfinger">请放手指</string>
+    <string name="putsecondfinger">请第二次放手指</string>
+    <string name="exitcontinu">连续录入指纹退出</string>
+    <string name="lib">指纹库操作</string>
+    <!--指纹模块 end-->
+
+    <!--hipermisson-->
+    <string name="permission_storage">存储空间</string>
+    <string name="permission_location">位置信息</string>
+    <string name="permission_camera">拍照权限</string>
+    <string name="permission_dialog_title">开启%s</string>
+    <string name="permission_dialog_msg">为了您能正常使用%s，需要以下权限</string>
+    <string name="permission_title">请允许获取%s</string>
+    <string name="permission_denied">我们需要获取%1$s, 否则您将无法正常使用%2$s</string>
+    <string name="permission_denied_with_naac">"由于%1$s无法获取%2$s, 不能正常运行, 请开启权限后再使用。\n\n设置路径: 应用管理->%3$s->权限"</string>
+    <string name="permission_cancel">取消</string>
+    <string name="permission_ensure">确定</string>
+    <string name="permission_reject">拒绝</string>
+    <string name="permission_btn_next">下一步</string>
+    <string name="permission_go_to_setting">去设置</string>
+    <string name="muti_permission_default_style">申请多个权限(Default Style With Fade)</string>
+    <string name="muti_permission_blue_style">申请多个权限(Blue Style With Scale)</string>
+    <string name="muti_permission_green_style">申请多个权限(Green Style With Modal)</string>
+    <string name="single_permission">申请单个权限</string>
+    <string name="permission_on_close">用户关闭权限申请</string>
+    <string name="permission_completed">所有权限申请完成</string>
+    <string name="permission_cus_item_camera">照相机</string>
+    <string name="permission_cus_item_phone">拨打手机</string>
+    <string name="permission_cus_title">亲爱的上帝</string>
+    <string name="permission_cus_msg">为了保护世界的和平，开启这些权限吧！\n你我一起拯救世界！</string>
+
+    <!--App shortcuts-->
+    <string name="add_new_website">Add New Website</string>
+    <string name="add_new_website_short">Add Website</string>
+    <string name="existing_shortcuts">Existing shortcuts:</string>
+    <string name="remove_shortcut">Remove</string>
+    <string name="disable_shortcut">Disable</string>
+    <string name="enable_shortcut">Enable</string>
+
+    <!--Drawablelayout侧滑-->
+    <string name="drawer_open"> Drawer is opened </string>
+    <string name="drawer_close">Drawer is closed </string>
+    <string name="global_title">推酷</string>
+
+
+    <string name="app_title">USB Serial Example</string>
+    <string name="refreshing">Refreshing...</string>
+</resources>

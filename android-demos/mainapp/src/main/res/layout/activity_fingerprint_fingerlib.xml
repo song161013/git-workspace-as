@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/remind"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="温馨提示"
+        />
+    
+    <TextView 
+        android:id="@+id/result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="结果"
+        />
+
+    <EditText 
+        android:id="@+id/libEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/upFingerLib"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="upload finger library"
+        />
+    
+    <Button
+        android:id="@+id/downFingerLib"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="download finger library"
+        />
+    <Button 
+        android:id="@+id/cleanFingerLib"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="clean All Finger Library"
+        />
+    
+</LinearLayout>

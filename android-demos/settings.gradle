@@ -1,0 +1,7 @@
+include ':figureprint', ':panellistlibrary', ':mylibrary', ':mainapp', ':library', ':glide_library', ':gif_encoder', ':gif_decoder', ':disklrucache', ':weixinpay', ':videocache'
+include ':videocachelibrary'
+//include ':panellist'
+//是否有isLoadPanellist这个属性
+if (hasProperty('isLoadPanellist') ? isLoadPanellist.toBoolean() : false) {
+    include ':panellist'
+}

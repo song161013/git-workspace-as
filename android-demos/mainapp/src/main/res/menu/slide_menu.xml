@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.navigaterdrawer.MainActivity">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <!-- 添加一个action菜单项 ,显示一张图片，标题设为空-->
+    <item
+        android:id="@+id/action_websearch"
+        android:icon="@drawable/permission_ic_calendar"
+        android:title=""
+        app:showAsAction="withText|ifRoom" />
+
+</menu>
