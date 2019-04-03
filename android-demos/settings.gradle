@@ -1,4 +1,4 @@
-include ':figureprint', ':panellistlibrary', ':mylibrary', ':mainapp', ':library', ':glide_library', ':gif_encoder', ':gif_decoder', ':disklrucache', ':weixinpay', ':videocache'
+include ':figureprint', ':panellistlibrary', ':mainapp', ':glide_library', ':gif_encoder', ':gif_decoder', ':disklrucache', ':videocache'
 include ':videocachelibrary'
 //include ':panellist'
 //是否有isLoadPanellist这个属性

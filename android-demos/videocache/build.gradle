@@ -16,7 +16,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion '25.0.2'
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId 'com.danikula.videocache.sample'
@@ -25,6 +25,10 @@ android {
         versionCode 1
         versionName '1.0'
     }
+    lintOptions {
+        abortOnError false
+    }
+
 }
 
 //annotationProcessor  {
@@ -35,10 +39,12 @@ android {
 //}
 
 dependencies {
-    compile project(':videocachelibrary')
-    compile 'com.android.support:support-v4:23.1.0'
-    compile 'org.androidannotations:androidannotations-api:3.3.2'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:support-v4:23.1.0'
+    implementation 'org.androidannotations:androidannotations-api:3.3.2'
 //    compile 'com.danikula:videocache:2.7.1'
-    compile 'com.viewpagerindicator:library:2.4.2-SNAPSHOT@aar'
+    implementation 'com.viewpagerindicator:library:2.4.2-SNAPSHOT@aar'
     annotationProcessor 'org.androidannotations:androidannotations:3.3.2'
+    implementation project(':videocachelibrary')
+
 }

@@ -25,11 +25,11 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:26.1.0'
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:support-v4:26.1.0'
-    compile project(':gif_decoder')
-    compile project(':gif_encoder')
-    compile project(':disklrucache')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation project(':gif_decoder')
+    implementation project(':gif_encoder')
+    implementation project(':disklrucache')
 }

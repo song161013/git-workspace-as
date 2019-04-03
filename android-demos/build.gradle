@@ -26,65 +26,15 @@ allprojects {
         }
     }
 }
+this.getAllPro()
 
-//println "thie root file path:"+getRootDir().absolutePath //E:\workspace-as\android-demos
-//println "thie build file path" +getBuildDir().absolutePath //E:\workspace-as\android-demos\build
-//println "thie project file path"+getProjectDir().absolutePath //E:\workspace-as\android-demos
-/**
- * 依赖相关api
- */
-/**
- * 闭包参数是ScriptHandler,可省去。如：
- * buildscript {
- *          repositories{
- *          maven {
- *                 name 'personal'
- *                 url 'http://localhost:8080:/net'
- *                  credentials{
- *                      username = 'admin'
- *                      password = 'admin123'
- *                  }
- *          }
- *      }
- *  }
- */
-buildscript { ScriptHandler scriptHandler ->
-    /**
-     * 配置工程的仓库地址
-     * repositories又是一个闭包,闭包参数是RepositoryHandler
-     * 最常用的是文件夹依赖，即flatDir方法
-     * jcenter()
-     * mavenCentral()
-     * mavenLocal
-     */
-    scriptHandler.repositories { RepositoryHandler rHandler ->
-        rHandler.jcenter()
-        rHandler.mavenCentral()
-        rHandler.mavenLocal() //本地maven库
-        //以maven用法为例
-        rHandler.maven { //私有的maven地址
-            name 'personal'
-            url 'http://localhost:8080:/net'
-            //设置账号和密码
-            credentials {
-                username = 'admin'
-                password = 'admin123'
-            }
+def getAllPro() {
+    println "获取 projects=========================="
+    this.getAllprojects().eachWithIndex { Project project, int i ->
+        if (i == 0) {
+            println "root project：${project.getName()}"
+        } else {
+            println "  |--sub project:${project.getName()}"
         }
     }
-    /**
-     * 配置工程的“插件”依赖地址
-     * buildscript中的dependencies主要是引入一些gradle使用的插件。而如app中的dependencies主要是
-     * app应用程序用到的依赖库，比如compile 'com.android.support:appcompat-v7:26.1.0'。
-     * 总的来说，一个是gradle本身用到的依赖，一个是应用程序用到的依赖
-     */
-    scriptHandler.dependencies {
-        //为应用程序指定成Android应用程序或Android库程序，如果不引用则不可以指定为Android程序
-//        classpath 'com.android.tools.build.:gradle:2.2.2'
-        //引入腾讯热修复框架
-//        classpath "com.tencent.tinker:tinker-patch-gradle-plugin:1.7.7"
-    }
 }
-
-
-
