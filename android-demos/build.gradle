@@ -1,5 +1,5 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-
+apply from: rootProject.file('common.gradle')
 buildscript {
     repositories {
         jcenter()
@@ -26,8 +26,7 @@ allprojects {
         }
     }
 }
-this.getAllPro()
-
+//this.getAllPro()
 def getAllPro() {
     println "获取 projects=========================="
     this.getAllprojects().eachWithIndex { Project project, int i ->
@@ -38,3 +37,8 @@ def getAllPro() {
         }
     }
 }
+
+task helloTask(group: "demoTask", description: "测试") {
+    println "this is hello task"
+}
+
